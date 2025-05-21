@@ -11,7 +11,7 @@ pip install barecat-cython
 
 The classes `BarecatCython` and `BarecatMmapCython` are similar to `barecat.Barecat` but do not support writing and advanced functions such as listing directories and globbing, etc. Only retrieving file data based on a given key string (inner filepath) is supported.
 
-The difference between the two classes in `barecat_cython`` is that `BarecatCython` uses file handles and seek/read to access shard files, while `BarecatMmapCython` uses memory mapping. Depending on computer and filesystem properties, one or the other may be faster, though the difference is not large in my experience.
+The difference between the two classes in `barecat_cython` is that `BarecatCython` uses file handles and seek/read to access shard files, while `BarecatMmapCython` uses memory mapping. Depending on computer and filesystem properties, one or the other may be faster, though the difference is not large in my experience.
 
 ```python
 from barecat_cython import BarecatCython, BarecatMmapCython
