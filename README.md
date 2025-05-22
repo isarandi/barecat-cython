@@ -3,7 +3,9 @@
 A partial Cython/C implementation of the [Barecat storage file format](https://github.com/isarandi/barecat).
  
 Install with:
+
 ```bash
+sudo apt install libsqlite3-dev  # or equivalent with other package managers
 pip install barecat-cython
 ```
 
